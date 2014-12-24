@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/photo_grid_item_height">
+
+    <com.takemeaway.view.ForegroundImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_grid_item_height"
+        android:foreground="@drawable/image_overlay"
+        android:scaleType="centerCrop"
+        tools:src="#D18866" />
+</FrameLayout>

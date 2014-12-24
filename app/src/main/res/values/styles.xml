@@ -2,7 +2,56 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- 改变action bar 的item 背景颜色 -->
+        <item name="android:actionBarItemBackground">@null</item>
         <!-- Customize your theme here. -->
+        <item name="android:actionBarDivider">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
+    <style name="Widget.TakeMeAway.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <!-- actionbar 背景颜色 -->
+        <item name="android:background">@drawable/actionbar_bg</item>
+        <!-- actionbar 中显示进度条-->
+        <item name="android:indeterminateProgressStyle">
+            @style/Widget.TakeMeAway.ActionBar.Progress
+        </item>
+        <item name="font">roboto_condensed</item>
+    </style>
+
+    <style name="Widget.TakeMeAway.Dark.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <!-- actionbar 背景颜色 -->
+        <item name="android:background">@drawable/actionbar_bg</item>
+        <!-- actionbar 中显示进度条-->
+        <item name="android:indeterminateProgressStyle">@style/Widget.TakeMeAway.ActionBar.Progress
+        </item>
+        <item name="font">roboto_condensed</item>
+    </style>
+
+    <style name="Widget.TakeMeAway.ActionBar.Progress" parent="@android:style/Widget.Holo.Light.ProgressBar">
+        <item name="android:minHeight">36dip</item>
+        <item name="android:maxHeight">36dip</item>
+    </style>
+
+    <style name="Widget.TakeMeAway.Login.Title" parent="android:Widget">
+        <item name="font">roboto_condensed</item>
+        <item name="android:textSize">@dimen/login_title_textsize</item>
+    </style>
+
+    <style name="Widget.TakeMeAway.UserName.Title" parent="android:Widget">
+        <item name="font">roboto_condensed</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="Widget.TakeMeAway.TextView.Title" parent="android:Widget">
+        <item name="font">roboto_condensed</item>
+    </style>
+
+    <style name="TextAppearance.TakeMeAway.FloatLabel" parent="android:Widget">
+        <item name="android:textColor">@color/float_label</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

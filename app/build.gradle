@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "20.0.0"
+    buildToolsVersion '20.0.0'
 
     defaultConfig {
         applicationId "com.takemeaway"
@@ -20,8 +20,11 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:support-v4:20.0.0'
-    compile 'com.loopj.android:android-async-http:1.4.5'    //网络请求
+    compile 'com.loopj.android:android-async-http:1.4.5'
+    //网络请求
     compile project(':deps:PullToRefreshLibrary')
+    compile 'com.google.guava:guava:17.+'
+    compile 'com.android.support:support-v4:19.+'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.2'  //图片加载类库
+    compile fileTree(dir: 'libs', include: '*.jar')
 }

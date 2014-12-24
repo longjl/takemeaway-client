@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_myinfo_item_bg"
+            android:padding="15dp">
+
+            <com.takemeaway.view.FontTextView
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="头像"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.takemeaway.view.CircleImageView
+                android:id="@+id/civ_avatar"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:scaleType="centerCrop"
+                android:src="@drawable/longjl"
+                app:border_color="@android:color/white"
+                app:border_width="1dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_myinfo_item_bg"
+            android:padding="15dp">
+
+            <com.takemeaway.view.FontTextView
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="昵称"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.takemeaway.view.FontTextView
+                android:id="@+id/ftv_nickname"
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="我是一只小小鸟"
+                android:textColor="@color/grey_60"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_myinfo_item_bg"
+            android:padding="15dp">
+
+            <com.takemeaway.view.FontTextView
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="手机号"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.takemeaway.view.FontTextView
+                android:id="@+id/ftv_mobile"
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="15011297819"
+                android:textColor="@color/grey_60"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_myinfo_item_bg"
+            android:padding="15dp">
+
+            <com.takemeaway.view.FontTextView
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="年龄"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.takemeaway.view.FontTextView
+                android:id="@+id/ftv_age"
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="23岁"
+                android:textColor="@color/grey_60"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_myinfo_item_bg"
+            android:padding="15dp">
+
+            <com.takemeaway.view.FontTextView
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="性别"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.takemeaway.view.FontTextView
+                android:id="@+id/ftv_sex"
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="男"
+                android:textColor="@color/grey_60"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_educational"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_myinfo_item_bg"
+            android:padding="15dp">
+
+            <com.takemeaway.view.FontTextView
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="学历"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.takemeaway.view.FontTextView
+                android:id="@+id/ftv_educational"
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="研究生"
+                android:textColor="@color/grey_60"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_myinfo_item_bg"
+            android:padding="15dp">
+
+            <com.takemeaway.view.FontTextView
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="地区"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.takemeaway.view.FontTextView
+                android:id="@+id/ftv_area"
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="贵州 铜仁"
+                android:textColor="@color/grey_60"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_myinfo_item_bg"
+            android:padding="15dp">
+
+            <com.takemeaway.view.FontTextView
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="伴游费"
+                android:textColor="@android:color/black"
+                android:textSize="15sp" />
+
+            <com.takemeaway.view.FontTextView
+                android:id="@+id/ftv_cost"
+                style="@style/Widget.TakeMeAway.TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="300￥/天"
+                android:textColor="@color/grey_60"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="?android:buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_authentication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_authentication_bg"
+            android:text="认证" />
+    </LinearLayout>
+</LinearLayout>
